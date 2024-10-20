@@ -60,9 +60,9 @@ const Contact = () => {
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Address</h3>
                                         <p className="text-gray-600">
-                                            123 Tech Street<br />
-                                            Digital City, DC 12345<br />
-                                            United States
+                                            No. 8, Anthony Enahoro Street,<br />
+                                            Utako, Abuja<br />
+                                            Nigeria
                                         </p>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                                     <Phone className="h-6 w-6 text-primary-600 mr-4" />
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                                        <p className="text-gray-600">+1 234 567 8900</p>
+                                        <p className="text-gray-600">+234 803 xxx xxxx</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
@@ -88,9 +88,8 @@ const Contact = () => {
                                     Office Hours
                                 </h2>
                                 <div className="space-y-2 text-gray-600">
-                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                                    <p>Sunday: Closed</p>
+                                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                    <p>Weekends: Closed</p>
                                 </div>
                             </div>
                         </div>

@@ -19,18 +19,18 @@ const About = () => {
 
     const team = [
         {
-            name: 'John Smith',
-            role: 'CEO & Founder',
+            name: 'Ifeanyi Franklin Ikeh',
+            role: 'Founder',
             image: '/api/placeholder/300/300',
         },
         {
-            name: 'Sarah Johnson',
-            role: 'Technical Director',
+            name: 'Abraham Aondowase Yussuf',
+            role: 'Founder',
             image: '/api/placeholder/300/300',
         },
         {
-            name: 'Michael Chen',
-            role: 'Lead Developer',
+            name: 'Arinze Collins Eze',
+            role: 'Founder',
             image: '/api/placeholder/300/300',
         },
     ];
