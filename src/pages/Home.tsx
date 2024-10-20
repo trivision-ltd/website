@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Hero from '../components/Hero';
+import Hero from '../components/Hero.tsx';
 import { ArrowRight, Code, Cloud, LineChart } from 'lucide-react';
 
 const Home = () => {
