@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename="/trivision-tech">
+    <Router basename="/website">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
