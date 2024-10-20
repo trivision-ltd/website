@@ -24,7 +24,7 @@ const About = () => {
             image: '/api/placeholder/300/300',
         },
         {
-            name: 'Abraham Aondowase Yussuf',
+            name: 'Abraham Aondowase Yusuf',
             role: 'Founder',
             image: '/api/placeholder/300/300',
         },
