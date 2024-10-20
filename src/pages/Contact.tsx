@@ -60,9 +60,8 @@ const Contact = () => {
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Address</h3>
                                         <p className="text-gray-600">
-                                            No. 8, Anthony Enahoro Street,<br />
-                                            Utako, Abuja<br />
-                                            Nigeria
+                                            No. 8, Anthony Enahoro Street Utako,<br />
+                                            Abuja, Nigeria
                                         </p>
                                     </div>
                                 </div>

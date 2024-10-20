@@ -52,11 +52,11 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li className="flex items-center text-gray-400">
                                 <MapPin size={16} className="mr-2" />
-                                123 Tech Street, Digital City
+                                No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Phone size={16} className="mr-2" />
-                                +1 234 567 8900
+                                +234 803 xxx xxxx
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Mail size={16} className="mr-2" />
