@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
+import { useState } from 'react';
 
 const About = () => {
+    const [showTeam,] = useState<boolean>(false);
     const values = [
         {
             title: 'Innovation',
@@ -76,7 +78,7 @@ const About = () => {
             </section>
 
             {/* Team Section */}
-            <section className="py-16 bg-gray-50">
+            {showTeam && (<section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-12">
                         Our Team
@@ -106,6 +108,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            )}
         </div>
     );
 };
