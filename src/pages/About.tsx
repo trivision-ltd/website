@@ -23,16 +23,6 @@ const About = () => {
             role: 'Founder',
             image: '/api/placeholder/300/300',
         },
-        {
-            name: 'Abraham Aondowase Yusuf',
-            role: 'Founder',
-            image: '/api/placeholder/300/300',
-        },
-        {
-            name: 'Arinze Collins Eze',
-            role: 'Founder',
-            image: '/api/placeholder/300/300',
-        },
     ];
 
     return (
