@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -22,20 +23,20 @@ const Hero = () => {
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
-                                    <a
-                                        href="/contact"
+                                    <Link
+                                        to="/contact"
                                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
                                     >
                                         Get Started
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <a
-                                        href="/services"
+                                    <Link
+                                        to="/services"
                                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 md:py-4 md:text-lg md:px-10"
                                     >
                                         Our Services
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

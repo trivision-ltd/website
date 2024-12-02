@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import Address from '../components/Address';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -23,6 +24,11 @@ const Contact = () => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const businessAddress = {
+        place: 'No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria',
+        position: [9.0735823, 7.4429097]
     };
 
     return (
@@ -59,10 +65,7 @@ const Contact = () => {
                                     <Icon icon="lucide:map-pin" className="h-6 w-6 text-primary-600 mr-4" />
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Address</h3>
-                                        <p className="text-gray-600">
-                                            No. 8, Anthony Enahoro Street Utako,<br />
-                                            Abuja, Nigeria
-                                        </p>
+                                        <p className="text-gray-600">{businessAddress.place}</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
@@ -191,9 +194,8 @@ const Contact = () => {
             <section className="bg-gray-50 py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-white rounded-lg shadow-lg p-4">
-                        {/* Replace this div with an actual map integration */}
                         <div className="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
-                            <p className="text-gray-500">Map integration goes here</p>
+                            <Address place={businessAddress.place} position={businessAddress.position as [number, number]} />
                         </div>
                     </div>
                 </div>
