@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 const Portfolio = () => {
     const projects = [
@@ -7,8 +7,8 @@ const Portfolio = () => {
             title: 'E-Commerce Platform',
             category: 'Web Development',
             description: 'A full-featured e-commerce platform built with React and Node.js',
-            image: '/api/placeholder/600/400',
-            technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
+            image: '/images/contextual.png',
+            technologies: ['Python', 'React', 'PostgreSQL', 'PostGIS', 'Azure'],
         },
         {
             title: 'Health & Fitness App',
@@ -23,27 +23,6 @@ const Portfolio = () => {
             description: 'Business intelligence platform with predictive analytics',
             image: '/api/placeholder/600/400',
             technologies: ['Python', 'TensorFlow', 'AWS'],
-        },
-        {
-            title: 'Cloud Migration Project',
-            category: 'Cloud Solutions',
-            description: 'Large-scale cloud migration for enterprise client',
-            image: '/api/placeholder/600/400',
-            technologies: ['AWS', 'Docker', 'Kubernetes'],
-        },
-        {
-            title: 'Digital Marketing Dashboard',
-            category: 'Analytics',
-            description: 'Real-time marketing analytics and reporting platform',
-            image: '/api/placeholder/600/400',
-            technologies: ['React', 'GraphQL', 'Google Analytics'],
-        },
-        {
-            title: 'Security Compliance System',
-            category: 'Cybersecurity',
-            description: 'Automated security compliance monitoring system',
-            image: '/api/placeholder/600/400',
-            technologies: ['Python', 'AWS', 'Elasticsearch'],
         },
     ];
 
@@ -114,7 +93,7 @@ const Portfolio = () => {
                                         className="inline-flex items-center text-primary-600 hover:text-primary-700"
                                     >
                                         View Case Study
-                                        <ExternalLink className="ml-2 h-4 w-4" />
+                                        <Icon icon="lucide:external-link" className="ml-2 h-4 w-4" />
                                     </a>
                                 </div>
                             </motion.div>

@@ -1,21 +1,21 @@
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero.tsx';
-import { ArrowRight, Code, Cloud, LineChart } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 const Home = () => {
     const services = [
         {
-            icon: <Code className="h-8 w-8 text-primary-600" />,
+            icon: <Icon icon="lucide:code" className="h-8 w-8 text-primary-600" />,
             title: 'Web Development',
             description: 'Custom web solutions built with cutting-edge technologies.',
         },
         {
-            icon: <Cloud className="h-8 w-8 text-primary-600" />,
+            icon: <Icon icon="lucide:cloud" className="h-8 w-8 text-primary-600" />,
             title: 'Cloud Solutions',
             description: 'Scalable and secure cloud infrastructure for your business.',
         },
         {
-            icon: <LineChart className="h-8 w-8 text-primary-600" />,
+            icon: <Icon icon="lucide:line-chart" className="h-8 w-8 text-primary-600" />,
             title: 'Digital Marketing',
             description: 'Data-driven strategies to grow your online presence.',
         },
@@ -77,7 +77,7 @@ const Home = () => {
                                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50"
                             >
                                 Get in touch
-                                <ArrowRight className="ml-2 h-5 w-5" />
+                                <Icon icon="lucide:arrow-right" className="ml-2 h-5 w-5" />
                             </a>
                         </div>
                     </div>

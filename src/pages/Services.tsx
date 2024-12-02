@@ -1,40 +1,40 @@
 import { motion } from 'framer-motion';
-import { Code, Smartphone, Cloud, Brain, LineChart, Shield } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 const Services = () => {
     const services = [
         {
-            icon: <Code className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:code" className="h-12 w-12 text-primary-600" />,
             title: 'Web Development',
             description: 'Custom web applications built with modern technologies like React, TypeScript, and Node.js.',
             features: ['Responsive Design', 'SEO Optimization', 'Performance Tuning', 'API Integration'],
         },
         {
-            icon: <Smartphone className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:smartphone" className="h-12 w-12 text-primary-600" />,
             title: 'Mobile Development',
             description: 'Native and cross-platform mobile applications for iOS and Android platforms.',
             features: ['Cross-Platform Apps', 'Native Development', 'UI/UX Design', 'App Store Deployment'],
         },
         {
-            icon: <Cloud className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:cloud" className="h-12 w-12 text-primary-600" />,
             title: 'Cloud Solutions',
             description: 'Scalable cloud infrastructure and services using AWS, Azure, or Google Cloud.',
             features: ['Cloud Migration', 'DevOps', 'Serverless Architecture', '24/7 Monitoring'],
         },
         {
-            icon: <Brain className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:brain" className="h-12 w-12 text-primary-600" />,
             title: 'AI & Machine Learning',
             description: 'Intelligent solutions leveraging cutting-edge AI and ML technologies.',
             features: ['Data Analysis', 'Predictive Models', 'Natural Language Processing', 'Computer Vision'],
         },
         {
-            icon: <LineChart className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:line-chart" className="h-12 w-12 text-primary-600" />,
             title: 'Digital Marketing',
             description: 'Result-driven digital marketing strategies to grow your online presence.',
             features: ['SEO/SEM', 'Content Marketing', 'Social Media', 'Analytics'],
         },
         {
-            icon: <Shield className="h-12 w-12 text-primary-600" />,
+            icon: <Icon icon="lucide:shield" className="h-12 w-12 text-primary-600" />,
             title: 'Cybersecurity',
             description: 'Comprehensive security solutions to protect your digital assets.',
             features: ['Security Audits', 'Penetration Testing', 'Compliance', 'Security Training'],

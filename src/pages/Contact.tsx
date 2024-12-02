@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -56,7 +56,7 @@ const Contact = () => {
                             </h2>
                             <div className="space-y-6">
                                 <div className="flex items-center">
-                                    <MapPin className="h-6 w-6 text-primary-600 mr-4" />
+                                    <Icon icon="lucide:map-pin" className="h-6 w-6 text-primary-600 mr-4" />
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Address</h3>
                                         <p className="text-gray-600">
@@ -66,14 +66,15 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center">
-                                    <Phone className="h-6 w-6 text-primary-600 mr-4" />
+                                    <Icon icon="lucide:phone" className="h-6 w-6 text-primary-600 mr-4" />
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                                        <p className="text-gray-600">+234 803 xxx xxxx</p>
+                                        <p className="text-gray-600">(+234) 902 010 9113</p>
+                                        <p className="text-gray-600">(+49) 1521 781 0552</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
-                                    <Mail className="h-6 w-6 text-primary-600 mr-4" />
+                                    <Icon icon="lucide:mail" className="h-6 w-6 text-primary-600 mr-4" />
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Email</h3>
                                         <p className="text-gray-600">info@trivisiontechltd.com</p>
@@ -88,7 +89,6 @@ const Contact = () => {
                                 </h2>
                                 <div className="space-y-2 text-gray-600">
                                     <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                                    <p>Weekends: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                                     type="submit"
                                     className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
                                 >
-                                    <Send className="h-5 w-5 mr-2" />
+                                    <Icon icon="lucide:send" className="h-5 w-5 mr-2" />
                                     Send Message
                                 </button>
                             </form>

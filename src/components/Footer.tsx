@@ -1,7 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer className="bg-gray-900 text-white">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -12,15 +13,14 @@ const Footer = () => {
                             Delivering innovative technology solutions for tomorrow's challenges.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-primary-500">
-                                <Facebook size={20} />
+                            <a href="https://www.linkedin.com/company/trivision-tech-ltd/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500">
+                                <Icon icon="simple-icons:linkedin" height={20} />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-primary-500">
-                                <Twitter size={20} />
+                                <Icon icon="simple-icons:twitter" height={20} />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-primary-500">
-                                {/*<LinkedIn size={20} />*/}
-                                <Twitter size={20} />
+                                <Icon icon="simple-icons:facebook" height={20} />
                             </a>
                         </div>
                     </div>
@@ -51,15 +51,15 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
                         <ul className="space-y-2">
                             <li className="flex items-center text-gray-400">
-                                <MapPin size={16} className="mr-2" />
+                                <Icon icon="lucide:map-pin" height={16} className="mr-2" />
                                 No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria
                             </li>
                             <li className="flex items-center text-gray-400">
-                                <Phone size={16} className="mr-2" />
+                                <Icon icon="lucide:phone" height={16} className="mr-2" />
                                 +234 803 xxx xxxx
                             </li>
                             <li className="flex items-center text-gray-400">
-                                <Mail size={16} className="mr-2" />
+                                <Icon icon="lucide:mail" height={16} className="mr-2" />
                                 info@trivisiontech.com
                             </li>
                         </ul>

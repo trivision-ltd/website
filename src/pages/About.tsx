@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { CheckCircle } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Icon } from '@iconify/react';
 
 const About = () => {
     const [showTeam,] = useState<boolean>(false);
@@ -41,9 +41,11 @@ const About = () => {
                         <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
                             About Trivision Tech
                         </h1>
-                        <p className="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
-                            We're a team of passionate technologists dedicated to transforming businesses
-                            through innovative digital solutions.
+                        <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                            At Trivision Technologies Limited our mission is to harness the power of technology to create innovative solutions that address social challenges, empower communities and drive sustainable development. We strive to bridge the digital divide by providing accessible, user-friendly solutions that enhance education, health and economic opportunities for all.
+                        </p>
+                        <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                            Our vision is to be a leading force in transforming lives through technology. We envision a world where every individual has access to the tools and knowledge they need to thrive, fostering a future where technology serves as a catalyst for positive change and social equity. Together, we aim to build a connected and inclusive society that embraces innovation for the betterment of humanity.
                         </p>
                     </motion.div>
                 </div>
@@ -65,7 +67,7 @@ const About = () => {
                                 className="bg-white p-6 rounded-lg shadow-lg"
                             >
                                 <div className="flex items-center mb-4">
-                                    <CheckCircle className="h-6 w-6 text-primary-600 mr-2" />
+                                    <Icon icon="lucide:check-circle" className="h-6 w-6 text-primary-600 mr-2" />
                                     <h3 className="text-xl font-semibold text-gray-900">
                                         {value.title}
                                     </h3>
