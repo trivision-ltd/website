@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
@@ -106,12 +107,12 @@ const Services = () => {
                     <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
                         Let's discuss how our services can help you achieve your business goals
                     </p>
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50"
                     >
                         Contact Us Today
-                    </a>
+                    </Link>
                 </div>
             </section>
         </div>
