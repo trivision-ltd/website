@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Icon icon="lucide:phone" height={16} className="mr-2" />
-                                +234 803 xxx xxxx
+                                (+234) 902 010 9113
                             </li>
                             <li className="flex items-center text-gray-400">
                                 <Icon icon="lucide:mail" height={16} className="mr-2" />
