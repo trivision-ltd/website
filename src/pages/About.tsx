@@ -41,12 +41,21 @@ const About = () => {
                         <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
                             About Trivision Tech
                         </h1>
+
+                        <h3 className="mt-4 text-2xl font-extrabold text-gray-500 max-w-3xl mx-auto">
+                            Mission & Vision
+                        </h3>
+
                         <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
                             At Trivision Technologies Limited our mission is to harness the power of technology to create innovative solutions that address social challenges, empower communities and drive sustainable development. We strive to bridge the digital divide by providing accessible, user-friendly solutions that enhance education, health and economic opportunities for all.
                         </p>
                         <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
                             Our vision is to be a leading force in transforming lives through technology. We envision a world where every individual has access to the tools and knowledge they need to thrive, fostering a future where technology serves as a catalyst for positive change and social equity. Together, we aim to build a connected and inclusive society that embraces innovation for the betterment of humanity.
                         </p>
+
+                        {/* <h3 className="mt-4 text-2xl font-extrabold text-gray-500 max-w-3xl mx-auto">
+                            Company Profile
+                        </h3> */}
                     </motion.div>
                 </div>
             </div>

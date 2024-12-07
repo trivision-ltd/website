@@ -51,15 +51,16 @@ const Footer: React.FC = () => {
                         <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
                         <ul className="space-y-2">
                             <li className="flex items-center text-gray-400">
-                                <Icon icon="lucide:map-pin" height={16} className="mr-2" />
+                                <Icon icon="lucide:map-pin" height={20} className="mr-2" />
                                 No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria
                             </li>
                             <li className="flex items-center text-gray-400">
-                                <Icon icon="lucide:phone" height={16} className="mr-2" />
-                                (+234) 902 010 9113
+                                <Icon icon="lucide:phone" height={20} className="mr-2" />
+                                (+234) 902 010 9113<br />
+                                (+49) 1521 781 0552
                             </li>
                             <li className="flex items-center text-gray-400">
-                                <Icon icon="lucide:mail" height={16} className="mr-2" />
+                                <Icon icon="lucide:mail" height={20} className="mr-2" />
                                 info@trivisiontech.com
                             </li>
                         </ul>

@@ -3,8 +3,25 @@ import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
 import Address from '../components/Address';
 
+interface IFormData {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+}
+
+interface IBusinessAddress {
+    place: string;
+    position: [number, number];
+}
+
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    const [businessAddress,] = useState<IBusinessAddress>({
+        place: 'No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria',
+        position: [9.0735823, 7.4429097]
+    });
+
+    const [formData, setFormData] = useState<IFormData>({
         name: '',
         email: '',
         subject: '',
@@ -24,11 +41,6 @@ const Contact = () => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
-    };
-
-    const businessAddress = {
-        place: 'No. 8, Anthony Enahoro Street Utako, Abuja, Nigeria',
-        position: [9.0735823, 7.4429097]
     };
 
     return (
@@ -73,6 +85,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                                         <p className="text-gray-600">(+234) 902 010 9113</p>
+                                        <p className="text-gray-600">(+49) 1521 781 0552</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center">
