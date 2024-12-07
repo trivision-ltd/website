@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "motion/react";
 import Hero from '../components/Hero.tsx';
 import { Icon } from '@iconify/react';
 
