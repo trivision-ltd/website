@@ -53,9 +53,17 @@ const About = () => {
                             Our vision is to be a leading force in transforming lives through technology. We envision a world where every individual has access to the tools and knowledge they need to thrive, fostering a future where technology serves as a catalyst for positive change and social equity. Together, we aim to build a connected and inclusive society that embraces innovation for the betterment of humanity.
                         </p>
 
-                        {/* <h3 className="mt-4 text-2xl font-extrabold text-gray-500 max-w-3xl mx-auto">
+                        <h3 className="mt-4 text-2xl font-extrabold text-gray-500 max-w-3xl mx-auto">
                             Company Profile
-                        </h3> */}
+                        </h3>
+
+                        <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                            Trivision Technologies Limited is at the forefront of technological innovation, delivering tailored solutions that empower businesses to succeed in a digital-first world. By blending advanced technologies with strategic insights, we help our clients achieve efficiency, growth, and long-term impact.
+                        </p>
+
+                        <p className="text-justify mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+                            Our team of experts is dedicated to delivering excellence, ensuring that every project is completed to the highest standards. With a focus on innovation and customer satisfaction, we are committed to driving progress and making a positive impact in the digital age.
+                        </p>
                     </motion.div>
                 </div>
             </div>
