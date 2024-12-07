@@ -107,19 +107,19 @@ const Portfolio = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
                         <div className="text-center">
-                            <div className="text-4xl font-bold text-white mb-2">100+</div>
+                            <div className="text-4xl font-bold text-white mb-2">10+</div>
                             <div className="text-primary-100">Projects Completed</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl font-bold text-white mb-2">50+</div>
+                            <div className="text-4xl font-bold text-white mb-2">10+</div>
                             <div className="text-primary-100">Happy Clients</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl font-bold text-white mb-2">5+</div>
+                            <div className="text-4xl font-bold text-white mb-2">10+</div>
                             <div className="text-primary-100">Years Experience</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl font-bold text-white mb-2">3</div>
+                            <div className="text-4xl font-bold text-white mb-2">2</div>
                             <div className="text-primary-100">Global Offices</div>
                         </div>
                     </div>
