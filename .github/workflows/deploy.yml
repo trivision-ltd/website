@@ -25,6 +25,11 @@ jobs:
         run: yarn install
 
       - name: Build
+        env:
+          VITE_EMAILJS_ENDPOINT: https://api.emailjs.com/api/v1.0/email/send
+          VITE_EMAILJS_USER_ID: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
         run: yarn build && yarn postbuild
 
       - name: Upload static files as artifact

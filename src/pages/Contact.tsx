@@ -1,19 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
 import Address from '../components/Address';
-
-interface IFormData {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
-
-interface IBusinessAddress {
-    place: string;
-    position: [number, number];
-}
+import { FormStatus, IBusinessAddress, IMessage, sendEmail } from '../api';
 
 const Contact = () => {
     const [businessAddress,] = useState<IBusinessAddress>({
@@ -21,26 +10,41 @@ const Contact = () => {
         position: [9.0735823, 7.4429097]
     });
 
-    const [formData, setFormData] = useState<IFormData>({
+    const [formData, setFormData] = useState<IMessage>({
         name: '',
         email: '',
         subject: '',
         message: '',
     });
 
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [submitStatus, setSubmitStatus] = useState<FormStatus>('idle');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you would typically handle form submission to your backend
-        setSubmitStatus('success');
-        // Reset form after submission
-        setFormData({ name: '', email: '', subject: '', message: '' });
+
+        const message: IMessage = {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+        };
+
+        try {
+            const response = await sendEmail(message);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', subject: '', message: '' });
+        } catch {
+            setSubmitStatus('error');
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
+        setFormData((prev: IMessage) => ({ ...prev, [name]: value }));
     };
 
     return (
