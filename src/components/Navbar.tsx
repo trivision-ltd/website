@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Icon } from '@iconify/react';
+import logo from '../assets/logo.jpeg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <Link to="/" className="flex-shrink-0 flex items-center">
-                            <img src="/logo.jpeg" alt="Trivision Tech Logo" className="h-8 w-8 mr-2" />
+                            <img src={logo} alt="Trivision Tech Logo" className="h-8 w-8 mr-2" />
                             <span className="text-primary-600 text-xl font-bold">
                                 Trivision Technologies Limited
                             </span>

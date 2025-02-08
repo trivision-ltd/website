@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
+import contextual from '../assets/images/contextual.png';
 
 const Portfolio = () => {
     const projects = [
@@ -7,7 +8,7 @@ const Portfolio = () => {
             title: 'E-Commerce Platform',
             category: 'Web Development',
             description: 'A full-featured e-commerce platform built with React and Node.js',
-            image: '/images/contextual.png',
+            image: contextual,
             technologies: ['Python', 'React', 'PostgreSQL', 'PostGIS', 'Azure'],
         },
         {
