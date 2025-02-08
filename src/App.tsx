@@ -1,11 +1,14 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
-import Home from './pages/Home.tsx';
-import About from './pages/About.tsx';
-import Services from './pages/Services.tsx';
-import Portfolio from './pages/Portfolio.tsx';
-import Contact from './pages/Contact.tsx';
+
+const Home = React.lazy(() => import('./pages/Home.tsx'));
+const About = React.lazy(() => import('./pages/About.tsx'));
+const Services = React.lazy(() => import('./pages/Services.tsx'));
+const Portfolio = React.lazy(() => import('./pages/Portfolio.tsx'));
+const Contact = React.lazy(() => import('./pages/Contact.tsx'));
+
 
 function App() {
   return (
