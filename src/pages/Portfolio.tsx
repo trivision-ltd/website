@@ -7,9 +7,9 @@ import analyticsLogo from '../assets/images/analytics.svg';
 const Portfolio = () => {
     const projects = [
         {
-            title: 'E-Commerce Platform',
+            title: 'Contextual PHI',
             category: 'Web Development',
-            description: 'A full-featured e-commerce platform built with React and Node.js',
+            description: 'A geospatial data analytics tool that allows users to search for information based on their location and context.',
             image: contextual,
             technologies: ['Python', 'React', 'PostgreSQL', 'PostGIS', 'Azure'],
         },
