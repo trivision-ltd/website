@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
 import contextual from '../assets/images/contextual.png';
-import healthAppLogo from '../assets/images/health-app.png';
-import analyticsLogo from '../assets/images/analytics.png';
+import healthAppLogo from '../assets/images/health-app.svg';
+import analyticsLogo from '../assets/images/analytics.svg';
 
 const Portfolio = () => {
     const projects = [
