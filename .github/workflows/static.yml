@@ -39,10 +39,10 @@ jobs:
         run: npm install
       - name: Build
         env:
-          VITE_EMAILJS_ENDPOINT: ${{ secrets.EMAILJS_ENDPOINT }}
-          VITE_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
-          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
-          VITE_EMAILJS_USER_ID: ${{ secrets.EMAILJS_USER_ID }}
+          VITE_EMAILJS_ENDPOINT: ${{ vars.EMAILJS_ENDPOINT }}
+          VITE_EMAILJS_SERVICE_ID: ${{ vars.EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ vars.EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_USER_ID: ${{ vars.EMAILJS_USER_ID }}
         run: npm run build:fix
       - name: Setup Pages
         uses: actions/configure-pages@v5
