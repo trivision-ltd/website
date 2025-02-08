@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
 import contextual from '../assets/images/contextual.png';
+import healthAppLogo from '../assets/images/health-app.png';
+import analyticsLogo from '../assets/images/analytics.png';
 
 const Portfolio = () => {
-    const placeholder = "https://placehold.co/600x400";
     const projects = [
         {
             title: 'E-Commerce Platform',
@@ -16,14 +17,14 @@ const Portfolio = () => {
             title: 'Health & Fitness App',
             category: 'Mobile Development',
             description: 'Cross-platform mobile app for tracking fitness and nutrition',
-            image: placeholder,
+            image: healthAppLogo,
             technologies: ['React Native', 'Firebase', 'Redux'],
         },
         {
             title: 'AI-Powered Analytics',
             category: 'Machine Learning',
             description: 'Business intelligence platform with predictive analytics',
-            image: placeholder,
+            image: analyticsLogo,
             technologies: ['Python', 'TensorFlow', 'AWS'],
         },
     ];
