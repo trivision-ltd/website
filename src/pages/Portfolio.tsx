@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import contextual from '../assets/images/contextual.png';
 
 const Portfolio = () => {
+    const placeholder = "https://placehold.co/600x400";
     const projects = [
         {
             title: 'E-Commerce Platform',
@@ -15,14 +16,14 @@ const Portfolio = () => {
             title: 'Health & Fitness App',
             category: 'Mobile Development',
             description: 'Cross-platform mobile app for tracking fitness and nutrition',
-            image: '/api/placeholder/600/400',
+            image: placeholder,
             technologies: ['React Native', 'Firebase', 'Redux'],
         },
         {
             title: 'AI-Powered Analytics',
             category: 'Machine Learning',
             description: 'Business intelligence platform with predictive analytics',
-            image: '/api/placeholder/600/400',
+            image: placeholder,
             technologies: ['Python', 'TensorFlow', 'AWS'],
         },
     ];
